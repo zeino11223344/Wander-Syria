@@ -1,0 +1,128 @@
+
+/* 1. تأثيرات الانتقال */
+button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* 2. تخصيص الأزرار */
+button {
+    background-color: #4CAF50; /* لون الخلفية */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    padding: 10px 20px; /* المسافة الداخلية */
+    border-radius: 5px; /* زوايا دائرية */
+    cursor: pointer; /* شكل المؤشر */
+}
+
+button:disabled {
+    background-color: #ccc; /* لون الخلفية عند التعطيل */
+    cursor: not-allowed; /* شكل المؤشر عند التعطيل */
+}
+
+/* 3. تأثيرات الظل */
+section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* 4. تخصيص النصوص */
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    line-height: 1.6; /* زيادة تباعد الأسطر */
+    margin: 10px 0; /* مسافة أعلى وأسفل الفقرات */
+}
+
+/* 5. تخطيط الشبكة */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* المسافة بين العناصر */
+}
+
+/* 6. تأثيرات التمرير */
+body {
+    transition: background-color 0.5s;
+}
+
+body.scrolled {
+    background-color: #e0f7fa; /* لون جديد عند التمرير */
+}
+
+/* 7. تخصيص قائمة التنقل */
+nav ul {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* لون الخلفية عند التمرير */
+}
+
+/* 8. تأثيرات الخلفية */
+header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* تدرج لوني */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 9. تخصيص الرسائل المنبثقة */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* موضع النص */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* 10. تخصيص الرسومات */
+img {
+    border-radius: 10px; /* زوايا دائرية للصور */
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05); /* تكبير الصورة عند التمرير */
+}
