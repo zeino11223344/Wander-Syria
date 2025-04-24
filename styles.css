@@ -1,15 +1,4 @@
-
 /* 1. تأثيرات الانتقال */
-button {
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-    background-color: #555;
-    transform: scale(1.05);
-}
-
-/* 2. تخصيص الأزرار */
 button {
     background-color: #4CAF50; /* لون الخلفية */
     color: white; /* لون النص */
@@ -17,6 +6,12 @@ button {
     padding: 10px 20px; /* المسافة الداخلية */
     border-radius: 5px; /* زوايا دائرية */
     cursor: pointer; /* شكل المؤشر */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* تأثيرات الانتقال */
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
 }
 
 button:disabled {
@@ -125,4 +120,9 @@ img {
 
 img:hover {
     transform: scale(1.05); /* تكبير الصورة عند التمرير */
+}
+
+/* 11. استخدام box-sizing */
+* {
+    box-sizing: border-box; /* تحسين حساب الأبعاد */
 }
